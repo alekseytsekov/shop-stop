@@ -1,0 +1,16 @@
+user
+    -register
+    -login
+    -logout
+
+product
+    -user: create
+    -user: buy
+    -user: edit
+    -user: delete
+
+    -name
+    -category
+
+category
+    -create
