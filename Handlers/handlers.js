@@ -8,7 +8,7 @@ function test() {
     console.log('test');
     return true;
 }
-
+ 
 module.exports = [ 
     homeHandler, 
     filesHandler,

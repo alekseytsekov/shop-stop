@@ -1,4 +1,3 @@
-//"use 'esversion: 6'";
 /*jshint esversion: 6 */
 
 const responseInfo = require('./Utils/responses.js');
@@ -19,7 +18,7 @@ http.createServer((request, response) => {
         }
     }
 
-    if (!hasHandler) {
+    if (!hasHandler) { 
 
         log(request, true);
 

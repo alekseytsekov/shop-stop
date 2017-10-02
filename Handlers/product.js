@@ -37,7 +37,7 @@ module.exports = (req, res) => {
 
         req.on('end', () => {
             let product = queryString.parse(dataString);
-
+ 
             console.log('-- ' + JSON.stringify(product));
 
             db.products.add(product);

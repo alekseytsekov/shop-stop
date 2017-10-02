@@ -53,7 +53,7 @@ function getContentType(url) {
     } else if (url.endsWith('.js')) {
         return 'application/javascript';
     } else if (url.endsWith('.gif')) {
-        return 'image/gif';
+        return 'image/gif'; 
     }
 }
 

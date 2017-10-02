@@ -9,7 +9,7 @@ const queryString = require('querystring');
 const db = require('../Config/database.js');
 
 module.exports = (req, res) => {
-
+ 
     req.pathname = req.pathname || url.parse(req.url).pathname;
 
     if (req.pathname === '/' && req.method === 'GET') {

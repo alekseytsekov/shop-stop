@@ -6,7 +6,7 @@ user
 product
     -user: create
     -user: buy
-    -user: edit
+    -user: edit 
     -user: delete
 
     -name

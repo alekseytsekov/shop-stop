@@ -13,4 +13,4 @@ response.contentType.textPlain = { 'content-type' : 'text/plain'};
 response.contentType.js = { 'content-type' : 'application/javascript'};
 response.contentType.html = { 'content-type' : 'text/html'};
 
-module.exports = response;
+module.exports = response; 
