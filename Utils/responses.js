@@ -4,7 +4,8 @@ const response = {};
 
 response.codes = {
     ok : 200,
-    notFound : 404
+    notFound : 404,
+    redirect : 302
 };
 
 response.contentType = {};

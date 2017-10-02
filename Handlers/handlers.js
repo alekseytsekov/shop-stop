@@ -2,6 +2,7 @@
 
 const homeHandler = require('./home');
 const filesHandler = require('./static-files');
+const productHandler = require('./product.js');
 
 function test() {
     console.log('test');
@@ -10,5 +11,6 @@ function test() {
 
 module.exports = [ 
     homeHandler, 
-    filesHandler 
+    filesHandler,
+    productHandler
 ];

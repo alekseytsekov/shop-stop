@@ -9,29 +9,32 @@ const handlers = require('./Handlers/handlers.js');
 
 http.createServer((request, response) => {
     
-    console.log('---------------------------------------');
-    console.log('req.url');
-    console.log(request.url);
-    console.log('---------------------------------------');
-
     let hasHandler = false;
     for (var handler of handlers) {
 
         if (!handler(request, response)) {
             hasHandler = true;
+            log(request);
             break;
         }
     }
 
     if (!hasHandler) {
 
-        console.log('*******************************************************************************************************');
-        console.log(request.url);
-        console.log('GRESHKA , unprocessed REQUEST');
-        console.log('*******************************************************************************************************');
+        log(request, true);
 
         response.writeHead(responseInfo.codes.notFound, responseInfo.contentType.textPlain);
         response.write('Error! Page not found!');
         response.end();
     }
 }).listen(port);
+
+function log(request, isError = false) {
+
+    let type = 'Success';
+    if (isError) {
+        type = 'ERROR';
+    }
+
+    console.log(`${type}: ${request.url}`);
+}

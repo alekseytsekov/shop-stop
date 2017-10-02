@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop stop</title>
 
+
+    <!-- fav icon showing only in Firefox !!! -->
     <link rel="icon" href="/Content/Icons/favicon.ico" />
-    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="/Content/Css/site.css">
     
     <!--
@@ -28,6 +29,15 @@
     </header>
     <main>
       <h1 class="head-title">Welcome to ShopStop!</h1>
+
+      <form>
+        <input type="text"  placeholder="Search..." name="searchquery">
+        <input type="submit" value="Search">
+      </form>
+
+      <div class="cards">
+        {content}
+      </div>
     </main>
     <footer>
       <p>&copy; ShopStop</p>
